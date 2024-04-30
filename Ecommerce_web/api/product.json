@@ -1,0 +1,68 @@
+[{
+    "id": 1,
+    "name": "MSI GF63",
+    "category": "Computers",
+    "brand": "MSI",
+    "price": 1000,
+    "stock": "20",
+    "description": "The MSI Thin GF63 12UCX-1049XFR laptop offers excellent performance thanks to its Intel Core i5-12450H processor, 16 GB of DDR4 memory, NVIDIA GeForce RTX 2050 graphics chip and 512 GB PCIe M.2 SSD.",
+    "image": "./Images/laptop.png"
+},
+{
+    "id": 2,
+    "name": "JBL Tune 670NC",
+    "category": "Electronic",
+    "brand": "JBL",
+    "price": 200,
+    "stock": "200",
+    "description": "JBL Tune 670NC Adaptive Noise Cancelling Wireless On Ear Headphones Purple",
+    "image": "./Images/headphone.png"
+},
+{
+    "id": 3,
+    "name": "Samsung 75",
+    "category": "Electronic",
+    "brand": "Samsung",
+    "price": 1000,
+    "stock": "20",
+    "description": "Samsung 75 Inch CU7100 UHD HDR Smart TV (2023) - 4K Crystal Processor, Adaptive Sound Audio, PurColour, Built In Gaming TV Hub, Smart TV Streaming & Video Call Apps And Image Contrast Enhancer [Energy Class F]",
+    "image": "./Images/TV.png"
+
+},
+{
+    "id": 4,
+    "name": "Iphone 15",
+    "category": "Gadget",
+    "brand": "Iphone",
+    "price": 1000,
+    "stock": "80",
+    "description": "Apple iPhone 15 - Oliz Store 6.1 Super Retina XDR OLED Display",
+    "image": "./Images/iphone.png"
+    
+},
+{
+    "id": 5,
+    "name": "Air Force-1",
+    "category": "Sneaker",
+    "brand": "Nike",
+    "price": 1000,
+    "stock": "20",
+    "description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.",
+    "image": "./Images/air-force-1.png"
+    
+},
+{
+    "id": 6,
+    "name": "Mantra Avatar",
+    "category": "Musical Instrument",
+    "brand": "Mantra",
+    "price": 600,
+    "stock": "20",
+    "description": "Mantra Avatar Semi Acoustic Guitar - 3 Band Equalizer and Tuner",
+    "image" : "./Images/guitar.jpg"
+    
+}
+
+
+
+]
