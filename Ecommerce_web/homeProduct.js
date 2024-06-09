@@ -1,3 +1,5 @@
+
+import { addToCart } from "./addToCart";
 import { homeQuantityToggle } from "./homeQuantityToggle";
 
 const productContainer = document.querySelector("#productContainer");
@@ -10,7 +12,7 @@ export const showProduct = (product) => {
     }
 
     product.forEach((curElem) => {
-     const {brand, category, description, id, image, name, price, stock} = curElem;
+     const { category, description, id, image, name, price, stock} = curElem;
 
        const productClone = document.importNode(productTemplate.content, true);
         
@@ -20,13 +22,20 @@ export const showProduct = (product) => {
        productClone.querySelector('.productImage').src = image;
        productClone.querySelector(".productStock").textContent= stock;
        productClone.querySelector(".category").textContent = category;
-       productClone.querySelector(".productPrice").textContent = `Nrs ${price}`;
+       productClone.querySelector(".productPrice").textContent = `Nrs${price}`;
 
        productClone
        .querySelector(".stockElement")
        .addEventListener("click", (event) => {
          homeQuantityToggle(event, id, stock);
        });
+
+       productClone
+       .querySelector('.add-to-cart')
+       .addEventListener("click", (event) => {
+        addToCart(event,id, stock)
+       });
+
        productContainer.append(productClone)
     })
 
