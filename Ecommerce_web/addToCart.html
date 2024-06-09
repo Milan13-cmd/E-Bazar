@@ -57,67 +57,58 @@
     </div>
   </header>
 
-  <section class="addToCart">
+  <section class="addToCartElement">
     <div class="container">
       <section>
-        <div id="productCartContainer">
-        </div>
-        </section>
-        </div>
-        <section class="productCartTotalElem">
-          <div class="productCartTotalElement">
-            <p>Selected Offer Summary</p>
-            <div class="productOrderTotal">
-              <div>
-
-             <p>Sub Total:</p>
-             <p class="productSubTotal">0</p>
-           </div>
-           <div>
-             <p>Tax:</p>
-             <p class="productTax">Nrs 100</p>
-             </div>
-             <hr />
-             <div>
-            <p>Final Total:</p>
-            <p class="productFinalTotal">0</p>
-           </div>
-        </div>
-      </div>
+        <div id="productCartContainer"></div>
       </section>
-      
-      
-      <template id="productCartTemplate">
-      <div class="cards" id="cardValue">
-        <article class="information [card]">
-           <div>
-            <span class="category"></span>
-          </div>
-          <div class="imageContainer">
-            <img class="productImage" src="" alt="" />
-          </div>
-    
-          <h2 class="productName"></h2>
-    
-          <p class="productPrice"></p>
-    
-    
-            <div class="stockElement">
-              <button class="cartIncrement">+</button>
-              <p class="productQuantity" data-quantity="1">1</p>
-              <button class="cartDecrement">-</button>
+
+      <section class="productCartTotalElem">
+        <div class="productCartTotalElement">
+          <p>Selected Offer Summary</p>
+          <div class="productOrderTotal">
+            <div>
+              <p>Sub Total:</p>
+              <p class="productSubTotal">0</p>
             </div>
-          
-    
-          <button class="add-to-cart remove-to-cart-button">
-           Remove
-          </button>
-        </article>
-      </div>
-    </template>
-      
-      
+            <div>
+              <p>Tax:</p>
+              <p class="productTax">₹50</p>
+            </div>
+            <hr />
+            <div>
+              <p>Final Total:</p>
+              <p class="productFinalTotal">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </section>
+  
+      <template id="productCartTemplate">
+        <div class="cards" id="cardValue">
+          <article class="information card">
+             <div>
+              <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+              <img class="productImage" src="" alt="" />
+            </div>
+            <h2 class="productName"></h2>
+            <p class="productPrice"></p>
+      
+            <div class="stockElement">
+                <button class="cartIncrement">+</button>
+                <p class="productQuantity" data-quantity="1">1</p>
+                <button class="cartDecrement">-</button>
+            </div>
+            <button class="add-to-cart remove-to-cart-button">
+             Remove
+            </button>
+          </article>
+        </div>
+      </template>
 
   <footer class="section-footer">
     <div class="footer-container container">

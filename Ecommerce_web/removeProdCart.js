@@ -1,5 +1,6 @@
 import { getCartProductLS } from "./getCartProducts"
 import { updateCartValue } from "./updateCartValue";
+import { showToast } from "./showToast";
 
 export const removeProdCart = (id) => {
  let cartProducts = getCartProductLS();
@@ -14,7 +15,10 @@ export const removeProdCart = (id) => {
  let removeDiv = document.getElementById(`card${id}`);
  if(removeDiv){
   removeDiv.remove();
+
+  // show toast when product added to the cart
+  showToast("delete", id);
  }
   
  updateCartValue(cartProducts)
-}
+};
